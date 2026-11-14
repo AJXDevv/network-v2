@@ -1,0 +1,20 @@
+Practice 9 Part III — brief explanations and testing guide
+
+Q1: Make MessagePost and PhotoPost objects, add them to NewsFeed, then call show().
+Q2: Adding a comment later changes the same object stored in the feed.
+Q3: Removing 'extends Post' removes the inheritance arrow in BlueJ; restore it afterward.
+Q4: MessagePost and PhotoPost inherit like(), unlike(), and addComment().
+Q5: Both post types have printShortSummary() using the inherited getUserName().
+Q6: The superclass constructor runs before the subclass finishes initializing its fields.
+Q7: EventPost extends Post and can be added to NewsFeed.
+Q8: NewsFeed does not need changes for EventPost because it stores Post references.
+Q9: Removing Post.display() causes NewsFeed.show() to fail to compile, since the Post type no longer declares it.
+Q10: When each subclass overrides display(), dynamic dispatch calls the subclass version.
+Q11: super.display() invokes the common superclass implementation; output order is less flexible.
+Q12: Object.toString() takes no parameters and returns String.
+Q13: Without overriding it, toString() gives a class name and identity hash code.
+Q14-15: display() is arranged to show post content and details using protected helpers.
+Q16: Read the actual network-v4 NewsFeed and Post classes and note unfamiliar constructs in your notebook.
+
+Some exercises ask you to try intermediate versions or inspect BlueJ's debugger.
+The final code is a working end state; it cannot show every intermediate compile error.
